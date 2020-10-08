@@ -124,6 +124,11 @@ jobs:
             run: $JHI_SCRIPTS/24-deploy-with-docker-compose.sh
           - name: 'TESTS: END-to-End (Docker-compose)'
             run: $JHI_SCRIPTS/25-tests-e2e-docker-compose.sh
+          - name: 'E2E: Store failure screenshots'
+            uses: actions/upload-artifact@v2
+            with:
+                name: screenshots-${{ matrix.app-type }}
+                path: ${{ github.workspace }}/app/target/cypress/screenshots
           # ----------------------------------------------------------------------
           # Launch tests (Kubernetes)
           # ----------------------------------------------------------------------
