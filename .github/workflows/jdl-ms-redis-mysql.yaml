@@ -20,8 +20,7 @@
 name: JDLMS Redis MySQL
 # on: [push, pull_request]
 on:
-    schedule:
-        - cron: '0 8 * * *'
+    push:
 env:
     JHI_RUN_APP: 1
     JHI_JDK: 11
