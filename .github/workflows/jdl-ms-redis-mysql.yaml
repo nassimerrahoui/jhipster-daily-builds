@@ -129,7 +129,7 @@ jobs:
             if: ${{ always() }}
             with:
                 name: screenshots-${{ matrix.app-type }}
-                path: ${{ github.workspace }}/app/store/target/cypress/screenshots
+                path: /home/runner/app/store/target/cypress/screenshots
           # ----------------------------------------------------------------------
           # Launch tests (Kubernetes)
           # ----------------------------------------------------------------------
