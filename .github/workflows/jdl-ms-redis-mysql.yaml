@@ -128,7 +128,7 @@ jobs:
             uses: actions/upload-artifact@v2
             with:
                 name: screenshots-${{ matrix.app-type }}
-                path: ${{ github.workspace }}/app/target/cypress/screenshots
+                path: ${{ github.workspace }}/app/store/target/cypress/screenshots
           # ----------------------------------------------------------------------
           # Launch tests (Kubernetes)
           # ----------------------------------------------------------------------
