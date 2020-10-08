@@ -127,6 +127,7 @@ jobs:
           - name: 'E2E: Store failure screenshots'
             uses: actions/upload-artifact@v2
             with:
+                if: always()
                 name: screenshots-${{ matrix.app-type }}
                 path: /home/runner/app/store/target/cypress/screenshots
           # ----------------------------------------------------------------------
