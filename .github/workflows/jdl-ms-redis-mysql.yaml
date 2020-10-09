@@ -24,7 +24,7 @@ on:
 env:
     JHI_RUN_APP: 1
     JHI_JDK: 11
-    JHI_LIB_REPO: https://github.com/nassimerrahoui/jhipster.git
+    JHI_LIB_REPO: https://github.com/jhipster/jhipster.git
     JHI_LIB_BRANCH: master
     JHI_GEN_REPO: https://github.com/nassimerrahoui/generator-jhipster.git
     JHI_GEN_BRANCH: master
